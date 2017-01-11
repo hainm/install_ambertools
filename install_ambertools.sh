@@ -8,7 +8,7 @@ channel='hainm'
 set -e
 
 function print_help(){
-    echo "bash install_ambertools.sh --prefix [your_desired_dir]"
+    echo "sh install_ambertools.sh --prefix [your_desired_dir]"
     exit
 }
 
@@ -61,7 +61,7 @@ fi
 echo "Install Miniconda and AmberTools to $prefix/$amberfolder"
 echo ""
 
-bash miniconda.sh -b -p $prefix/$amberfolder
+/bin/sh miniconda.sh -b -p $prefix/$amberfolder
 
 export PATH=$prefix/$amberfolder/bin:$PATH
 conda update --all -y
