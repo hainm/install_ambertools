@@ -34,5 +34,4 @@ make test.pdb4amber
 cd $AMBERHOME/test/sanderapi
 make test
 cd $AMBERHOME/test
-make test.serial.sander.MM
-make test.serial.sander.QMMM
+make test.serial.sander
