@@ -20,7 +20,7 @@ function download_ambertools(){
     tar -xf $tarfile
 }
 
-download_ambertools()
+download_ambertools
 
 amber.setup_test_folders amber17
 export AMBERHOME=`python -c "import sys; print(sys.prefix)"`
