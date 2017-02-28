@@ -18,6 +18,7 @@ addons:
     - openmpi-common
     - libopenmpi-dev
     - xutils-dev
+    - csh
 
 matrix:
   include:
