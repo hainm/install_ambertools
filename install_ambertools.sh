@@ -17,7 +17,7 @@ url2="http://ambermd.org/downloads/ambertools-dev/AmberTools17.tar.gz"
 tarfile=`python -c "url='$url2'; print(url.split('/')[-1])"`
 
 function download_ambertools(){
-    wget $url -O $tarfile
+    wget $url2 -O $tarfile
     tar -xf $tarfile
     ls amber17/
 }
