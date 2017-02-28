@@ -41,12 +41,13 @@ install:
 script:
     - tleap -h
     - sqm -h
-    - sander -h
+    - sander --version
     - cpptraj -h
     - python -c "import parmed; print(parmed)"
     - python -c "import sander; print(sander)"
     - python -c "import pytraj; print(pytraj)"
-    - python -c "import nglview; print(nglview)"   
+    - python -c "import pdb4amber; print(pdb4amber)"   
+    - MMPBSA.py --help
 
 after_success:
     - echo "hello there"
