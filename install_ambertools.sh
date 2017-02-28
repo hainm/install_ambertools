@@ -19,6 +19,7 @@ tarfile=`python -c "url='$url2'; print(url.split('/')[-1])"`
 function download_ambertools(){
     wget $url -O $tarfile
     tar -xf $tarfile
+    ls amber17/
 }
 
 download_ambertools
