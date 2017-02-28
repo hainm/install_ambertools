@@ -19,12 +19,6 @@ source activate myenv
 conda install numpy nomkl -y
 conda install scipy -y
 conda install coverage -y 
-# conda install libgfortran -c conda-forge -y
-
-export SKIP_REGISTRATION=1
-conda install ambertools=17 -c hainm/label/dev -y
-conda install ipywidgets -c conda-forge -y
-conda install nglview -c bioconda -y
 
 # pytest
 pip install pytest
