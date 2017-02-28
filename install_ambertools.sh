@@ -24,7 +24,7 @@ function download_ambertools(){
 
 download_ambertools
 
-amber.setup_test_folders ./amber17
+amber.setup_test_folders `pwd`/amber17
 export AMBERHOME=`python -c "import sys; print(sys.prefix)"`
 cd $AMBERHOME/AmberTools/test
 make test.cpptraj
