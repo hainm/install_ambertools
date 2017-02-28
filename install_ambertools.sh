@@ -35,4 +35,4 @@ cd $AMBERHOME/test/sanderapi
 make test
 cd $AMBERHOME/test
 make test.serial.sander.MM
-make test.serial.sander.QM
+make test.serial.sander.QMMM
