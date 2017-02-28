@@ -47,6 +47,7 @@ script:
     - python -c "import sander; print(sander)"
     - python -c "import pytraj; print(pytraj)"
     - python -c "import pdb4amber; print(pdb4amber)"   
+    - export AMBERHOME=`python -c "import sys; print(sys.prefix)"`
     - MMPBSA.py --help
 
 after_success:
