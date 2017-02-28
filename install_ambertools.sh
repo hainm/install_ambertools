@@ -1,13 +1,13 @@
 #!/bin/sh
 
 # conda install:
-url='https://126-81537431-gh.circle-artifacts.com/0/tmp/circle-artifacts.NLMmQgl/ambertools-build/amber-conda-bld/linux-64/ambertools-17.0-0.tar.bz2'
+url='https://129-81537431-gh.circle-artifacts.com/0/tmp/circle-artifacts.Ezc5HAG/ambertools-build/amber-conda-bld/linux-64/ambertools-17.0-0.tar.bz2'
 wget $url
 conda install ambertools-17.0-0.tar.bz2
 
 # non conda-install:
 #    - pick your favorite python version
-#    - url='https://126-81537431-gh.circle-artifacts.com/0/tmp/circle-artifacts.NLMmQgl/ambertools-build/amber-conda-bld/non-conda-install/linux-64.ambertools-17.0-0.28Feb17.H0644.tar.bz2'
+#    - url='https://129-81537431-gh.circle-artifacts.com/0/tmp/circle-artifacts.Ezc5HAG/ambertools-build/amber-conda-bld/non-conda-install/linux-64.ambertools-17.0-0.28Feb17.H0750.tar.bz2'
 #    - wget $url
 #    - tar -xf linux-64.ambertools-17.0-0.28Feb17.H0613.tar.bz2
 #    - source amber17/amber.sh
