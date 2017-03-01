@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # conda install:
-url='https://129-81537431-gh.circle-artifacts.com/0/tmp/circle-artifacts.Ezc5HAG/ambertools-build/amber-conda-bld/linux-64/ambertools-17.0-0.tar.bz2'
+url='https://139-81537431-gh.circle-artifacts.com/0/tmp/circle-artifacts.0zkpNrQ/ambertools-build/amber-conda-bld/linux-64/ambertools-17.0-0.tar.bz2'
 wget $url
 conda install ambertools-17.0-0.tar.bz2
 
