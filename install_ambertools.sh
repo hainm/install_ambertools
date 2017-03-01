@@ -1,37 +1,19 @@
 #!/bin/sh
 
-# conda install:
 url='https://139-81537431-gh.circle-artifacts.com/0/tmp/circle-artifacts.0zkpNrQ/ambertools-build/amber-conda-bld/linux-64/ambertools-17.0-0.tar.bz2'
 wget $url
 conda install ambertools-17.0-0.tar.bz2
 
-# non conda-install:
-#    - pick your favorite python version
-#    - url='https://129-81537431-gh.circle-artifacts.com/0/tmp/circle-artifacts.Ezc5HAG/ambertools-build/amber-conda-bld/non-conda-install/linux-64.ambertools-17.0-0.28Feb17.H0750.tar.bz2'
-#    - wget $url
-#    - tar -xf linux-64.ambertools-17.0-0.28Feb17.H0613.tar.bz2
-#    - source amber17/amber.sh
-
-# install source code for testing (OK if you just use your local amber git)
 url2="http://ambermd.org/downloads/ambertools-dev/AmberTools17.tar.gz"
 tarfile=`python -c "url='$url2'; print(url.split('/')[-1])"`
 
 function download_ambertools(){
     wget $url2 -O $tarfile
     tar -xf $tarfile
-    ls amber17/
 }
 
 download_ambertools
 
-amber.setup_test_folders `pwd`/amber17
 export AMBERHOME=`python -c "import sys; print(sys.prefix)"`
-cd $AMBERHOME/AmberTools/test
-make test.cpptraj
-make test.parmed
-make test.pytraj
-make test.pdb4amber
-cd $AMBERHOME/test/sanderapi
-make test
-cd $AMBERHOME/test
-make test.serial.sander
+amber.setup_test_folders `pwd`/amber17
+amber.run_tests
