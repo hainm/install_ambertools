@@ -16,4 +16,4 @@ download_ambertools
 
 export AMBERHOME=`python -c "import sys; print(sys.prefix)"`
 amber.setup_test_folders `pwd`/amber17
-amber.run_tests
+python $AMBERHOME/AmberTools/conda_tools/amber.run_tests
