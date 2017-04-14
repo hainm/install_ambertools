@@ -33,7 +33,7 @@ before_install:
 
 install:
     - source install_python.sh
-    - conda install -c hainm ambertools --yes
+    - conda install -c http://ambermd.org/downloads/ambertools-rc/conda ambertools --yes
 
 script:
     - tleap -h
