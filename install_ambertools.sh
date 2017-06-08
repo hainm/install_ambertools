@@ -187,7 +187,7 @@ install_amber_non_conda(){
 if [ -L \$AMBERHOME/bin/amber.python ]; then
     rm \$AMBERHOME/bin/amber.python
 fi
-ln -s python \$AMBERHOME/bin/amber.python
+ln -s \`which python\` \$AMBERHOME/bin/amber.python
 chmod +x \$AMBERHOME/bin/amber.python
 EOF
 }
