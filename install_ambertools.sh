@@ -188,7 +188,7 @@ if [ -L \$AMBERHOME/bin/amber.python ]; then
     rm \$AMBERHOME/bin/amber.python
 fi
 ln -s \`which python\` \$AMBERHOME/bin/amber.python
-chmod +x \$AMBERHOME/bin/amber.python
+# chmod +x \$AMBERHOME/bin/amber.python
 EOF
 }
 
